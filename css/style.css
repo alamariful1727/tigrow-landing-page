@@ -79,7 +79,6 @@ body {
 }
 .p-text {
 	color: var(--secondary-text-color);
-	font-size: 18px;
 }
 /* .stuck {
 	position: fixed;
@@ -102,6 +101,12 @@ body {
 
 .owl-dots button {
 	outline: none;
+}
+.owl-dots {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 /* section-about */
@@ -144,11 +149,8 @@ section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: 500px;
-	margin-bottom: 1rem;
 }
 .contact-us > div > img {
-	height: 100%;
-	display: block;
 	display: block;
 	margin: 0 auto;
 }

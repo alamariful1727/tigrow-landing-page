@@ -2,7 +2,9 @@
 // let navHeight = document.getElementById("div-nav").offsetHeight;
 // let wh = window.innerHeight;
 // let result = wh - navHeight;
-// document.getElementById("tigrow-wrapper").style.height = `${result}px`;
+// document.getElementById("ptext").innerHTML = `${window.innerHeight}px * ${
+// 	window.innerWidth
+// }px`;
 
 // // fixed Nav
 // $(window).scroll(function() {
