@@ -7,14 +7,24 @@
 // }px`;
 
 // // fixed Nav
-// $(window).scroll(function() {
-// 	if ($(window).scrollTop() > 31) {
-// 		$("#cn").addClass("stuck");
-// 	} else {
-// 		$("#cn").removeClass("stuck");
-// 	}
-// });
-// // scrollTop
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 1) {
+		$("#div-nav").addClass("stuck");
+	} else {
+		$("#div-nav").removeClass("stuck");
+	}
+});
+// scrollTop-Brand click
+$(".navbar-brand").click(function(e) {
+	$("html, body").animate(
+		{
+			scrollTop: 0
+		},
+		1000
+	);
+	e.preventDefault();
+});
+// scrollTop
 $("#scrollTop ").click(function(e) {
 	$("html, body").animate(
 		{
@@ -43,4 +53,39 @@ $(".owl-carousel").owlCarousel({
 			items: 1
 		}
 	}
+});
+
+$(document).ready(function() {
+	//Smooth Scrolling Effect
+	var headerHeight = document.getElementById("div-nav").offsetHeight;
+	$(".scroll").click(function(e) {
+		var targetHref = $(this).attr("href");
+		$("html, body").animate(
+			{
+				scrollTop: $(targetHref).offset().top - headerHeight
+			},
+			1000
+		);
+
+		e.preventDefault();
+	});
+
+	// Active link switching
+	$(window).scroll(function() {
+		var scrollbarLocation = $(this).scrollTop();
+		console.log(scrollbarLocation);
+		$(".scroll").each(function() {
+			var sectionOffset = $(this.hash).offset().top - headerHeight - 1;
+
+			if (sectionOffset <= scrollbarLocation) {
+				$(this)
+					.parent()
+					.addClass("active");
+				$(this)
+					.parent()
+					.siblings()
+					.removeClass("active");
+			}
+		});
+	});
 });

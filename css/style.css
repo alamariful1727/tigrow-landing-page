@@ -1,9 +1,15 @@
+/* @font-face {
+	font-family: Lato;
+	src: url(../fonts/Lato-Regular.ttf);
+} */
+
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 :root {
 	--primary-color: #0fa3a3;
 	--secondary-color: #123846;
 	--secondary-text-color: #707070;
+	--footer-text-color: #00ffec;
 }
 body {
 	box-sizing: border-box;
@@ -17,13 +23,13 @@ body {
 /* ScrollTop Btn */
 #scrollTop {
 	position: fixed;
-	bottom: 3%;
+	bottom: 15%;
 	right: 1%;
 	font-size: 20px;
 	background: var(--primary-color);
 	color: #f7f7f9;
 	border: 2px solid var(--secondary-color-color);
-	z-index: 10000;
+	z-index: 3;
 	width: 45px;
 	height: 45px;
 	outline: none;
@@ -36,6 +42,7 @@ body {
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	background-position: left bottom;
 	background-image: url("../img/Background-transparent.png");
 }
@@ -45,6 +52,17 @@ body {
 }
 .nav-div {
 	padding: 0px 30px;
+	transition: background-color 0.5s ease-out;
+	-webkit-transition: background-color 0.5s ease-out;
+}
+.stuck {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--primary-color);
+	width: 100%;
+	z-index: 2;
 }
 .nav-item {
 	padding: 0px 16px;
@@ -70,6 +88,19 @@ body {
 	transition: border-bottom-color 0.5s ease-out;
 	-webkit-transition: border-bottom-color 0.5s ease-out;
 }
+/* stuck active/hover */
+.stuck .navbar-light .navbar-nav .nav-item .nav-link:hover,
+.stuck .navbar-light .navbar-nav .nav-item.active .nav-link {
+	color: white;
+	border-bottom-color: var(--secondary-color);
+}
+/* stuck normal */
+.stuck .navbar-light .navbar-nav .nav-link {
+	color: white;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color 0.5s ease-out;
+	-webkit-transition: border-bottom-color 0.5s ease-out;
+}
 .nav-item:last-child {
 	padding-right: 0px;
 }
@@ -79,15 +110,6 @@ body {
 }
 .p-text {
 	color: var(--secondary-text-color);
-}
-/* .stuck {
-	position: fixed;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: #f7f7f7c7;
-	width: 100%;
-	border-bottom: 2px solid #e7e7e7;
 }
 
 /* custom_slider */
@@ -107,11 +129,12 @@ body {
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
+	z-index: 1;
 }
 
 /* section-about */
 section {
-	margin: 1rem 0;
+	margin: 0;
 }
 .what-we-do {
 	display: flex;
@@ -132,10 +155,22 @@ section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: 350px;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
+}
+.service-text p {
+	height: auto;
+	padding-bottom: 1rem;
+	border-bottom: 3px ridge rgba(20, 216, 190, 0.11);
+	border-radius: 0px 0px 30px 0px;
+}
+.services:last-child {
+	margin-bottom: 0;
 }
 .services:nth-child(odd) > div:first-child {
 	order: 1;
+}
+.service-img {
+	height: 350px;
 }
 .services > div > img {
 	height: 100%;
@@ -148,19 +183,57 @@ section {
 .contact-us {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-auto-rows: 500px;
+	grid-auto-rows: minmax(500px, auto);
+	margin: 5rem 0;
+	background-image: url("../img/Background-transparent.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: calc(100% - 68px);
 }
 .contact-us > div > img {
 	display: block;
 	margin: 0 auto;
 }
-
-.info-item {
-	display: flex;
-	/* grid-template-columns: 30% 70%; */
-	/* grid-auto-columns: 30px; */
+.contact-us-text {
+	margin-bottom: 2.5rem;
 }
-.info-item > i {
-	margin-right: 30px;
+.info-item {
+	font-family: monospace;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.info-item i {
 	font-size: 30px;
+	margin-top: 2rem;
+}
+.info-item .links i {
+	font-size: 30px;
+	margin-top: 2rem;
+	margin-right: 1.5rem;
+}
+.info-item .links a:last-child i {
+	margin-right: 0;
+}
+.info-item a {
+	color: black;
+}
+.fb {
+	color: #3b5998;
+}
+.li {
+	color: #007bb6;
+}
+
+/* footer */
+#footer {
+	background: var(--primary-color);
+	color: #ffffff;
+}
+#footer a {
+	color: var(--footer-text-color);
 }

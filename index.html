@@ -41,10 +41,10 @@
 		<!-- scrollTop ends -->
 
 		<!-- main-page starts-->
-		<div class="main-page container-fluid no-gutters px-0">
+		<div class="main-page container-fluid no-gutters px-0 " id="home">
 			<div class="nav-div" id="div-nav">
 				<nav class="navbar navbar-expand-lg navbar-light">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="">
 						<img class="logo" src="img/logo.png" alt="TiGrow Logo" />
 					</a>
 					<button
@@ -62,16 +62,18 @@
 					<div class="collapse navbar-collapse " id="navbarSupportedContent">
 						<ul class="custom-navbar-color navbar-nav ml-auto">
 							<li class="nav-item active">
-								<a class="nav-link text-center" href="#">Home</a>
+								<a class="nav-link text-center scroll" href="#home">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-center" href="#">About</a>
+								<a class="nav-link text-center scroll" href="#about">About</a>
 							</li>
+							<!-- <li class="nav-item">
+								<a class="nav-link text-center scroll" href="#team">Our Team</a>
+							</li> -->
 							<li class="nav-item">
-								<a class="nav-link text-center" href="#">Our Team</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-center" href="#">Contact Us</a>
+								<a class="nav-link text-center scroll" href="#contact"
+									>Contact Us</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -113,7 +115,7 @@
 		<!-- main-page Ends-->
 
 		<!-- about starts -->
-		<section class="section-about container-fluid">
+		<section class="section-about container-fluid" id="about">
 			<div class="what-we-do">
 				<h1>What we do ?</h1>
 				<p class="mt-5 p-text">
@@ -173,7 +175,7 @@
 					</div>
 				</div>
 				<div class="services">
-					<div>
+					<div class="service-img">
 						<img class="img-fluid" src="img/large/learning.png" />
 					</div>
 					<div class="service-text">
@@ -191,40 +193,60 @@
 		<!-- about ends -->
 
 		<!-- contact-us starts -->
-		<section class="container-fluid m-0">
-			<div class="contact-us">
-				<div class="contact-us-text">
-					<h1>Contact Us</h1>
-					<div class="info m-5">
-						<div class="info-item">
-							<i class="fas fa-globe-americas"></i>
-							<div class="content">
-								<h3>Asdasd</h3>
-								<p class="p-text">asdasdavbsf</p>
-							</div>
-						</div>
-						<div class="info-item">
-							<i class="fas fa-envelope"></i>
-							<div class="content">
-								<h3>Asdasd</h3>
-								<p class="p-text">asdasdavbsf</p>
-							</div>
-						</div>
-						<div class="info-item">
-							<i class="fas fa-mobile"></i>
-							<div class="content">
-								<h3>Asdasd</h3>
-								<p class="p-text">asdasdavbsf</p>
-							</div>
+		<div class="contact-us container-fluid m-0 px-5 " id="contact">
+			<div class="contact-us-text pt-5">
+				<h1>Contact Us</h1>
+				<div class="info mx-5">
+					<div class="info-item">
+						<i class="fas fa-globe-americas"></i>
+						<h4>MAILING ADDRESS</h4>
+						<h6 class="p-text">
+							House No.220, Road No. 14, Ground Floor <br />
+							Mohakhali DOHS, Dhaka
+						</h6>
+					</div>
+					<div class="info-item">
+						<i class="fas fa-envelope"></i>
+						<h4>EMAIL ADDRESS</h4>
+						<h6 class="p-text">rubaiyat@tigrow.co</h6>
+					</div>
+					<div class="info-item">
+						<i class="fas fa-mobile"></i>
+						<h4>PHONE NUMBER</h4>
+						<h6 class="p-text">+8801751325670</h6>
+					</div>
+					<div class="info-item">
+						<div class="links">
+							<a
+								href="https://www.facebook.com/TiGrow-403963930446141/"
+								target="_blank"
+								><i class="fab fa-facebook-square fb"></i
+							></a>
+							<a
+								href="https://www.linkedin.com/company/weaver-x/"
+								target="_blank"
+								><i class="fab fa-linkedin li"></i
+							></a>
 						</div>
 					</div>
 				</div>
-				<div>
-					<img class="img-fluid" src="img/small/contactus.png" />
-				</div>
 			</div>
-		</section>
+			<div class="d-none d-sm-none d-md-block">
+				<img class="img-fluid " src="img/small/contactus.png" />
+			</div>
+		</div>
 		<!-- contact-us ends -->
+
+		<!-- footer starts -->
+		<div id="footer" class="p-3">
+			<div class="container text-center">
+				<p class="m-0">
+					Copyright © TiGrow Ltd. Designed by
+					<a href="http://www.arifulalamarif.com" rel="nofollow">Ariful Alam</a>
+				</p>
+			</div>
+		</div>
+		<!-- footer ends -->
 
 		<!-- js -->
 		<script
