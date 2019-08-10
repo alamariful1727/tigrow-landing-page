@@ -48,6 +48,7 @@
 						<img class="logo" src="img/logo.png" alt="TiGrow Logo" />
 					</a>
 					<button
+						id="nav-btn"
 						class="navbar-toggler"
 						type="button"
 						data-toggle="collapse"
@@ -67,9 +68,9 @@
 							<li class="nav-item">
 								<a class="nav-link text-center scroll" href="#about">About</a>
 							</li>
-							<!-- <li class="nav-item">
+							<li class="nav-item">
 								<a class="nav-link text-center scroll" href="#team">Our Team</a>
-							</li> -->
+							</li>
 							<li class="nav-item">
 								<a class="nav-link text-center scroll" href="#contact"
 									>Contact Us</a
@@ -192,6 +193,50 @@
 		</section>
 		<!-- about ends -->
 
+		<!-- team starts -->
+		<div class="team container-fluid my-5" id="team">
+			<h1 class="text-center mb-5">Meet Our Team</h1>
+			<div class="iso-nav">
+				<ul>
+					<li class="active" data-filter="*">All Items</li>
+					<li data-filter=".business">Business Team</li>
+					<li data-filter=".dev">Dev Team</li>
+					<li data-filter=".backend">Back-End</li>
+					<li data-filter=".ux">UX/UI</li>
+					<li data-filter=".frontend">Front-End</li>
+				</ul>
+			</div>
+			<div class="main-iso">
+				<div class="row justify-content-center">
+					<div class="item col-sm-6 col-md-4 col-lg-3 business">
+						<img src="img/team/ceo.jfif" alt="" />
+					</div>
+					<div class="item col-sm-6 col-md-4 col-lg-3 business">
+						<img src="img/team/udaya.jpg" alt="" />
+					</div>
+					<div class="item col-sm-6 col-md-4 col-lg-3 dev backend">
+						<img src="img/team/nizam.jpg" alt="" />
+					</div>
+					<div class="item col-sm-6 col-md-4 col-lg-3 dev backend">
+						<img src="img/team/orvi.jpg" alt="" />
+					</div>
+					<div class="item col-sm-6 col-md-4 col-lg-3 dev backend">
+						<img src="img/team/arif.jpg" alt="" />
+					</div>
+					<div class="item col-sm-6 col-md-4 col-lg-3 dev ux">
+						<img src="img/team/saif.jpg" alt="" />
+					</div>
+					<div class="item col-sm-6 col-md-4 col-lg-3 dev frontend">
+						<img src="img/team/labiba.jpg" alt="" />
+					</div>
+					<div class="item col-sm-6 col-md-4 col-lg-3 dev ux">
+						<img src="img/team/afrida.jpeg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- team ends -->
+
 		<!-- contact-us starts -->
 		<div class="contact-us container-fluid m-0 px-5 " id="contact">
 			<div class="contact-us-text pt-5">
@@ -262,6 +307,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 		<!-- main.js -->
 		<script src="js/main.js"></script>

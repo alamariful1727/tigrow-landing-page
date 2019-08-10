@@ -1,12 +1,4 @@
-// //
-// let navHeight = document.getElementById("div-nav").offsetHeight;
-// let wh = window.innerHeight;
-// let result = wh - navHeight;
-// document.getElementById("ptext").innerHTML = `${window.innerHeight}px * ${
-// 	window.innerWidth
-// }px`;
-
-// // fixed Nav
+// fixed Nav
 $(window).scroll(function() {
 	if ($(window).scrollTop() > 1) {
 		$("#div-nav").addClass("stuck");
@@ -88,4 +80,22 @@ $(document).ready(function() {
 			}
 		});
 	});
+});
+// team
+$(".main-iso").isotope({
+	itemSelector: ".item",
+	masonry: {
+		columnWidth: 300
+	}
+});
+// Isotope click function
+$(".iso-nav ul li").click(function() {
+	$(".iso-nav ul li").removeClass("active");
+	$(this).addClass("active");
+
+	var selector = $(this).attr("data-filter");
+	$(".main-iso").isotope({
+		filter: selector
+	});
+	return false;
 });
