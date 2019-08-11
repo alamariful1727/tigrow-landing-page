@@ -18,12 +18,12 @@ body {
 /* ScrollTop Btn */
 #scrollTop {
 	position: fixed;
-	bottom: 15%;
+	bottom: 3%;
 	right: 1%;
 	font-size: 20px;
 	background: var(--primary-color);
 	color: #f7f7f9;
-	border: 2px solid var(--secondary-color-color);
+	border: 1px solid white;
 	z-index: 3;
 	width: 45px;
 	height: 45px;
@@ -180,7 +180,6 @@ body {
 .services > div > img {
 	display: block;
 	margin: 0 auto;
-	height: 100%;
 }
 .service-text p {
 	height: auto;

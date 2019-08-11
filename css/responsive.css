@@ -80,7 +80,7 @@
 		order: 1;
 	}
 	.item {
-		height: 500px;
+		height: auto;
 	}
 	.contact-us {
 		grid-template-columns: 1fr;
