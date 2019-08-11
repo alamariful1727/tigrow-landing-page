@@ -133,8 +133,12 @@ body {
 }
 
 /* section-about */
-section {
-	margin: 0;
+.section-about {
+	padding-bottom: 2rem;
+	margin-bottom: 5rem;
+	border: 1px solid #cccccc61;
+	border-left: none;
+	border-right: none;
 }
 .what-we-do {
 	display: flex;
@@ -143,7 +147,7 @@ section {
 	justify-content: center;
 	text-align: center;
 	margin: auto;
-	padding: 5rem 0;
+	padding-top: 4rem;
 	max-width: 991px;
 }
 
@@ -156,12 +160,7 @@ section {
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: 350px;
 	margin-bottom: 2rem;
-}
-.service-text p {
-	height: auto;
-	padding-bottom: 1rem;
-	border-bottom: 3px ridge rgba(20, 216, 190, 0.11);
-	border-radius: 0px 0px 30px 0px;
+	grid-column-gap: 0.5rem;
 }
 .services:last-child {
 	margin-bottom: 0;
@@ -169,14 +168,31 @@ section {
 .services:nth-child(odd) > div:first-child {
 	order: 1;
 }
+.services:nth-child(even) > div:last-child {
+	padding-left: 2rem;
+}
+.services:nth-child(odd) > div:last-child {
+	padding-right: 2rem;
+}
 .service-img {
 	height: 350px;
 }
 .services > div > img {
-	height: 100%;
-	display: block;
 	display: block;
 	margin: 0 auto;
+	height: 100%;
+}
+.service-text p {
+	height: auto;
+	padding-bottom: 1rem;
+	border-bottom: 3px ridge rgba(20, 216, 190, 0.11);
+	border-radius: 0px 0px 30px 0px;
+}
+.services > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
 }
 
 /* contact-us */
@@ -184,6 +200,7 @@ section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: minmax(500px, auto);
+	align-items: center;
 	margin: 5rem 0;
 	background-image: url("../img/Background-transparent.png");
 	background-attachment: fixed;
@@ -278,9 +295,11 @@ section {
 	top: initial !important;
 	height: 420px;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 .item img {
 	width: 100%;
-	height: 100%;
 	object-fit: cover;
+	display: block;
+	height: calc(100% - 68px);
 }

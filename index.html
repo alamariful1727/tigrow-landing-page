@@ -43,7 +43,7 @@
 		<!-- main-page starts-->
 		<div class="main-page container-fluid no-gutters px-0 " id="home">
 			<div class="nav-div" id="div-nav">
-				<nav class="navbar navbar-expand-lg navbar-light">
+				<nav class="navbar navbar-expand-lg navbar-light px-0">
 					<a class="navbar-brand" href="">
 						<img class="logo" src="img/logo.png" alt="TiGrow Logo" />
 					</a>
@@ -83,7 +83,7 @@
 			<!-- tigrow-wrapper starts -->
 			<div class="container-fluid px-5" id="tigrow-wrapper">
 				<div class="row align-items-center">
-					<div class="col-lg-5 pt-3 tigrow-text">
+					<div class="col-lg-5 pt-3 px-0 tigrow-text">
 						<h1 class="">TiGrow</h1>
 						<p class="p-text text-justify" id="ptext">
 							A social network for professionals. It will have unique features
@@ -116,10 +116,10 @@
 		<!-- main-page Ends-->
 
 		<!-- about starts -->
-		<section class="section-about container-fluid" id="about">
-			<div class="what-we-do">
+		<div class="section-about container-fluid" id="about">
+			<div class="what-we-do mb-5">
 				<h1>What we do ?</h1>
-				<p class="mt-5 p-text">
+				<p class="mt-3 p-text">
 					An <span class="font-weight-bold">AI</span> based social network for
 					professionals, that provides learning, marketplace, recruitment and
 					intra-company communication in one place.
@@ -128,7 +128,10 @@
 			<div class="wrapper container-fluid mt-3">
 				<div class="services">
 					<div>
-						<img class="img-fluid" src="img/large/learning.png" />
+						<img
+							class="img-fluid"
+							src="img/updated/TiGrow Learning Centre.png"
+						/>
 					</div>
 					<div class="service-text">
 						<h2>TiGrow Learning Centre</h2>
@@ -145,7 +148,7 @@
 				</div>
 				<div class="services">
 					<div>
-						<img class="img-fluid" src="img/large/recruitment.png" />
+						<img class="img-fluid" src="img/updated/TiGrow Recruiting.png" />
 					</div>
 					<div class="service-text">
 						<h2>TiGrow Recruitment Centre</h2>
@@ -162,7 +165,7 @@
 				</div>
 				<div class="services">
 					<div>
-						<img class="img-fluid" src="img/large/workplace.png" />
+						<img class="img-fluid" src="img/updated/TiGrow Workplace.png" />
 					</div>
 					<div class="service-text">
 						<h2>TiGrow Workplace</h2>
@@ -177,7 +180,7 @@
 				</div>
 				<div class="services">
 					<div class="service-img">
-						<img class="img-fluid" src="img/large/learning.png" />
+						<img class="img-fluid" src="img/updated/TiGrow Marketplace.png" />
 					</div>
 					<div class="service-text">
 						<h2>TiGrow Marketplace</h2>
@@ -190,13 +193,13 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 		<!-- about ends -->
 
 		<!-- team starts -->
 		<div class="team container-fluid my-5" id="team">
 			<h1 class="text-center mb-5">Meet Our Team</h1>
-			<div class="iso-nav">
+			<div class="iso-nav container-fluid">
 				<ul>
 					<li class="active" data-filter="*">All Items</li>
 					<li data-filter=".business">Business Team</li>
@@ -206,31 +209,65 @@
 					<li data-filter=".frontend">Front-End</li>
 				</ul>
 			</div>
-			<div class="main-iso">
+			<div class="main-iso container-fluid">
 				<div class="row justify-content-center">
 					<div class="item col-sm-6 col-md-4 col-lg-3 business">
 						<img src="img/team/ceo.jfif" alt="" />
+						<div class="caption">
+							<h3>Rubaiyat Farhan</h3>
+							<p>Founder / CEO</p>
+						</div>
 					</div>
-					<div class="item col-sm-6 col-md-4 col-lg-3 business">
+					<div class="item col-sm-6 col-md-4 col-lg-3 business dev">
 						<img src="img/team/udaya.jpg" alt="" />
+						<div class="caption">
+							<h3>Udaya Bir Saha</h3>
+							<p>CTO</p>
+						</div>
 					</div>
 					<div class="item col-sm-6 col-md-4 col-lg-3 dev backend">
 						<img src="img/team/nizam.jpg" alt="" />
+						<div class="caption">
+							<h3>Nizam Sarder</h3>
+							<p>Sr. Software Engineer</p>
+						</div>
 					</div>
 					<div class="item col-sm-6 col-md-4 col-lg-3 dev backend">
 						<img src="img/team/orvi.jpg" alt="" />
+						<div class="caption">
+							<div class="caption">
+								<h3>Orvi Das</h3>
+								<p>Software Engineer</p>
+							</div>
+						</div>
 					</div>
 					<div class="item col-sm-6 col-md-4 col-lg-3 dev backend">
 						<img src="img/team/arif.jpg" alt="" />
+						<div class="caption">
+							<h3>Ariful Alam</h3>
+							<p>Jr. Software Engineer</p>
+						</div>
 					</div>
 					<div class="item col-sm-6 col-md-4 col-lg-3 dev ux">
 						<img src="img/team/saif.jpg" alt="" />
+						<div class="caption">
+							<h3>Saif Islam</h3>
+							<p>UX/UI Designer</p>
+						</div>
 					</div>
 					<div class="item col-sm-6 col-md-4 col-lg-3 dev frontend">
 						<img src="img/team/labiba.jpg" alt="" />
+						<div class="caption">
+							<h3>Labiba Ibnat Moumita</h3>
+							<p>Front-end Web Intern</p>
+						</div>
 					</div>
 					<div class="item col-sm-6 col-md-4 col-lg-3 dev ux">
 						<img src="img/team/afrida.jpeg" alt="" />
+						<div class="caption">
+							<h3>Afrida Mahjabin pidim</h3>
+							<p>UX/UI Designer Intern</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -277,7 +314,7 @@
 				</div>
 			</div>
 			<div class="d-none d-sm-none d-md-block">
-				<img class="img-fluid " src="img/small/contactus.png" />
+				<img class="img-fluid " src="img/updated/Contact Us.png" />
 			</div>
 		</div>
 		<!-- contact-us ends -->
