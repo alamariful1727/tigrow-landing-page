@@ -28,6 +28,7 @@ body {
 	width: 45px;
 	height: 45px;
 	outline: none;
+	box-shadow: none;
 }
 #nav-btn {
 	border-color: var(--primary-color);
@@ -136,9 +137,7 @@ body {
 .section-about {
 	padding-bottom: 2rem;
 	margin-bottom: 5rem;
-	border: 1px solid #cccccc61;
-	border-left: none;
-	border-right: none;
+	border-bottom: 1px solid #cccccc61;
 }
 .what-we-do {
 	display: flex;
@@ -256,6 +255,11 @@ body {
 
 /* team */
 /****** Navigation styling *******/
+.team {
+	border-bottom: 1px solid #cccccc61;
+	padding-bottom: 2rem;
+	margin-bottom: 5rem;
+}
 .iso-nav {
 	text-align: center;
 }
