@@ -137,7 +137,9 @@ body {
 .section-about {
 	padding-bottom: 2rem;
 	margin-bottom: 5rem;
-	border-bottom: 1px solid #cccccc61;
+	border: 1px solid #cccccc61;
+	border-left: none;
+	border-right: none;
 }
 .what-we-do {
 	display: flex;
