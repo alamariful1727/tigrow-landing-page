@@ -13,7 +13,7 @@
 	.owl-carousel .owl-item img {
 		width: 100%;
 	}
-	.item {
+	.team-item {
 		height: 350px;
 	}
 }
@@ -29,7 +29,7 @@
 	.tigrow-text {
 		text-align: center;
 	}
-	.item {
+	.team-item {
 		height: 400px;
 	}
 }
@@ -62,7 +62,7 @@
 	.info-item {
 		justify-content: center;
 	}
-	.item {
+	.team-item {
 		height: 400px;
 	}
 }
@@ -88,7 +88,7 @@
 	.services > div:first-child {
 		order: 1;
 	}
-	.item {
+	.team-item {
 		height: auto;
 	}
 	.contact-us {

@@ -294,7 +294,7 @@ body {
 .main-iso {
 	height: auto !important;
 }
-.item {
+.team-item {
 	position: relative !important;
 	left: initial !important;
 	top: initial !important;
@@ -302,9 +302,12 @@ body {
 	margin-bottom: 1rem;
 	text-align: center;
 }
-.item img {
+.team-item img {
 	width: 100%;
 	object-fit: cover;
 	display: block;
 	height: calc(100% - 68px);
+}
+.caption {
+	font-family: monospace;
 }

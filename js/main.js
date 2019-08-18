@@ -1,3 +1,11 @@
+// //
+// let navHeight = document.getElementById("div-nav").offsetHeight;
+// let wh = window.innerHeight;
+// let result = wh - navHeight;
+// document.getElementById("ptext").innerHTML = `${window.innerHeight}px * ${
+// 	window.innerWidth
+// }px`;
+
 // fixed Nav
 $(window).scroll(function() {
 	if ($(window).scrollTop() > 1) {
@@ -32,7 +40,7 @@ $(".owl-carousel").owlCarousel({
 	margin: 0,
 	nav: false,
 	autoplay: true,
-	autoplayTimeout: 4000,
+	autoplayTimeout: 2800,
 	autoplayHoverPause: true,
 	responsive: {
 		0: {
@@ -83,7 +91,7 @@ $(document).ready(function() {
 });
 // team
 $(".main-iso").isotope({
-	itemSelector: ".item",
+	itemSelector: ".team-item",
 	masonry: {
 		columnWidth: 300
 	}
