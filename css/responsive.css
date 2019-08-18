@@ -13,6 +13,9 @@
 	.owl-carousel .owl-item img {
 		width: 100%;
 	}
+	.item {
+		height: 350px;
+	}
 }
 
 /* (md) Medium devices (tablets, 768px and up)*/
@@ -25,6 +28,9 @@
 	}
 	.tigrow-text {
 		text-align: center;
+	}
+	.item {
+		height: 400px;
 	}
 }
 
@@ -55,6 +61,9 @@
 	}
 	.info-item {
 		justify-content: center;
+	}
+	.item {
+		height: 400px;
 	}
 }
 
