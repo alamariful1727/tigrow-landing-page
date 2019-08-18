@@ -92,12 +92,16 @@ $(document).ready(function() {
 // team
 $(".main-iso").isotope({
 	itemSelector: ".team-item",
+	filter: "." + "business",
 	masonry: {
 		columnWidth: 300
 	}
 });
+let click = true;
 // Isotope click function
 $(".iso-nav ul li").click(function() {
+	// $(".main-iso").removeClass("d-none");
+	// $(".main-iso").addClass("d-block");
 	$(".iso-nav ul li").removeClass("active");
 	$(this).addClass("active");
 
